@@ -294,9 +294,6 @@ main{
       color: rgb(151, 151, 151);
       margin: auto;
 }
-.indicators{
-      grid-column: span 2;
-}
 .pie-chart{
       display: grid;
       grid-template: minmax(4vh, 1fr)/ minmax(4vh, 1fr) minmax(4vh, 0.5fr);
@@ -355,9 +352,10 @@ main{
       background: #FF984F;
 }
 .indicators{
-      display: grid;
-      grid-template: repeat(1, minmax(4vh, 1fr))/ repeat(auto-fit, minmax(4vh, 1fr));
       gap: 1vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 }
 .indicators .index{
       border-radius: 20px;
@@ -378,13 +376,13 @@ main{
       text-transform: uppercase;
       margin: auto;
       font-weight: 400;
-      font-size: 2vw;
+      font-size: 0.9em;
       text-transform: none;
 }
 .index span{
       line-height: 30px;
       font-weight: 400;
-      font-size: 1.5vw;
+      font-size: 0.8em;
       line-height: 134.17%;
 }
 .index .num{
@@ -392,7 +390,7 @@ main{
       line-height: 30px;
       grid-column: span 2;
       font-weight: 400;
-      font-size: 4vw;
+      font-size: 2em;
       line-height: 134.17%;
 }
 .block .carts{
